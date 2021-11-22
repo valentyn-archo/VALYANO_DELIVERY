@@ -8,18 +8,18 @@
 
 ### Technology stack
 
-- Frontend: ReactJS, React Multi Carousel, Axios, CSS Modules
+- Frontend: ReactJS, React Multi Carousel, Axios, CSS Modules (SCSS)
 - Backend: NodeJS (Express), MongoDB, GraphQL
 
 ## How to run the project
 **First of all, you need install all needed dependencies:**
-1. npm i;
+1. `npm i;`
 
 **How to run frontend?**
-1. npm run start:client;
+1. `npm run start:client;`
 
 **How to run backend?**
-1. npm run start:server;
+1. `npm run start:server;`
 
 **You also can run the frontend and backend together using the next command:**
-1. npm run start:all;
+1. `npm run start:all;`
