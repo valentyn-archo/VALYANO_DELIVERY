@@ -1,0 +1,497 @@
+[
+	{
+	   "_id":"61420cf7b14aac3eafb7cd81",
+	   "category":"salads",
+	   "name":"Thai Story Salad",
+	   "imgUrl":"/images/products/salads/thai-story-salad.png",
+	   "price":3.29,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd85",
+	   "category":"burgers",
+	   "name":"Perini Veggie Burger",
+	   "imgUrl":"/images/products/burgers/perini-veggie-burger.png",
+	   "price":5.69,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd9a",
+	   "category":"drinks",
+	   "name":"Coca Cola Zero",
+	   "imgUrl":"/images/products/drinks/coca-cola.png",
+	   "price":1.99,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cda1",
+	   "category":"pizza",
+	   "name":"Margherita Sushi Pizza",
+	   "imgUrl":"/images/products/pizza/margherita-sushi-pizza.png",
+	   "price":9.49,
+	   "discounts":50,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd86",
+	   "category":"desserts",
+	   "name":"Chocolate Coffee Ice Cream",
+	   "imgUrl":"/images/products/desserts/chocolate-coffee-ice-cream.png",
+	   "price":2.79,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd90",
+	   "category":"salads",
+	   "name":"New York Salad",
+	   "imgUrl":"/images/products/salads/new-york-salad.png",
+	   "price":4.29,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd9f",
+	   "category":"burgers",
+	   "name":"Farm Cheese Burger",
+	   "imgUrl":"/images/products/burgers/farm-cheese-burger.png",
+	   "price":5.59,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cda2",
+	   "category":"pizza",
+	   "name":"California Style Pizza",
+	   "imgUrl":"/images/products/pizza/california-style-pizza.png",
+	   "price":8.99,
+	   "discounts":50,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cda4",
+	   "category":"desserts",
+	   "name":"Dame Blanche Dessert",
+	   "imgUrl":"/images/products/desserts/dame-blanche-dessert.png",
+	   "price":3.59,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd7f",
+	   "category":"burgers",
+	   "name":"Minetta Cheese Burger",
+	   "imgUrl":"/images/products/burgers/minetta-cheese-burger.png",
+	   "price":5.59,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd83",
+	   "category":"desserts",
+	   "name":"Berry Vanilla Ice Cream",
+	   "imgUrl":"/images/products/desserts/berry-vanilla-ice-cream.png",
+	   "price":3.39,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd84",
+	   "category":"pizza",
+	   "name":"Chicago Style Pizza",
+	   "imgUrl":"/images/products/pizza/chicago-style-pizza.png",
+	   "price":9.39,
+	   "discounts":50,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd93",
+	   "category":"pizza",
+	   "name":"Mare e Monti Pizza",
+	   "imgUrl":"/images/products/pizza/mare-e-monti-pizza.png",
+	   "price":9.19,
+	   "discounts":50,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd87",
+	   "category":"drinks",
+	   "name":"Sangria Cocktail Wine",
+	   "imgUrl":"/images/products/drinks/sangria-cocktail-wine.png",
+	   "price":2.79,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd8a",
+	   "category":"salads",
+	   "name":"Spinach Salad",
+	   "imgUrl":"/images/products/salads/spinach-salad.png",
+	   "price":3.49,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd95",
+	   "category":"desserts",
+	   "name":"Strawberry Cream Desert",
+	   "imgUrl":"/images/products/desserts/strawberry-cream-desert.png",
+	   "price":3.39,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cda5",
+	   "category":"burgers",
+	   "name":"Veggie Kebab Hamburger",
+	   "imgUrl":"/images/products/burgers/veggie-kebab-hamburger.png",
+	   "price":6.29,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdb0",
+	   "category":"drinks",
+	   "name":"Lemon Soft Juice",
+	   "imgUrl":"/images/products/drinks/lemon-soft-juice.png",
+	   "price":2.79,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd97",
+	   "category":"burgers",
+	   "name":"Brown Chicken Hamburger",
+	   "imgUrl":"/images/products/burgers/brown-chicken-hamburger.png",
+	   "price":4.89,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdae",
+	   "category":"burgers",
+	   "name":"Veggie Buffalo Burger",
+	   "imgUrl":"/images/products/burgers/veggie-buffalo-burger.png",
+	   "price":6.19,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd82",
+	   "category":"pizza",
+	   "name":"Prosciutto Funghi Pizza",
+	   "imgUrl":"/images/products/pizza/prosciutto-funghi-pizza.png",
+	   "price":8.99,
+	   "discounts":50,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdb1",
+	   "category":"drinks",
+	   "name":"Fanta Fizzy Drinks",
+	   "imgUrl":"/images/products/drinks/fanta-fizzy-drinks.png",
+	   "price":1.99,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd80",
+	   "category":"desserts",
+	   "name":"Strawberry Ice Cream Dessert",
+	   "imgUrl":"/images/products/desserts/strawberry-ice-cream-dessert.png",
+	   "price":3.69,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd94",
+	   "category":"burgers",
+	   "name":"Shake Shack Burger",
+	   "imgUrl":"/images/products/burgers/shake-shack-burger.png",
+	   "price":6.29,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd8b",
+	   "category":"pizza",
+	   "name":"Sausage Margherita Pizza",
+	   "imgUrl":"/images/products/pizza/sausage-margherita-pizza.png",
+	   "price":9.39,
+	   "discounts":50,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd8e",
+	   "category":"drinks",
+	   "name":"Sprite Fizzy Drink",
+	   "imgUrl":"/images/products/drinks/sprite-fizzy-frink.png",
+	   "price":2.39,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd96",
+	   "category":"burgers",
+	   "name":"Lettuce Bacon Hamburger",
+	   "imgUrl":"/images/products/burgers/lettuce-bacon-hamburger.png",
+	   "price":5.19,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd99",
+	   "category":"drinks",
+	   "name":"Bay Breeze Fizzy",
+	   "imgUrl":"/images/products/drinks/bay-breeze-fizzy.png",
+	   "price":2.39,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cda7",
+	   "category":"drinks",
+	   "name":"Mojito Cocktail Juice",
+	   "imgUrl":"/images/products/drinks/mojito-cocktail-juice.png",
+	   "price":1.99,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd8c",
+	   "category":"pizza",
+	   "name":"Tomatos Italian Pizza",
+	   "imgUrl":"/images/products/pizza/tomatos-italian-pizza.png",
+	   "price":8.89,
+	   "discounts":50,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd9e",
+	   "category":"drinks",
+	   "name":"Old Manhattan Drink",
+	   "imgUrl":"/images/products/drinks/old-manhattan-drink.png",
+	   "price":2.79,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdad",
+	   "category":"pizza",
+	   "name":"Tandoori Chicken Pizza",
+	   "imgUrl":"/images/products/pizza/tandoori-chicken-pizza.png",
+	   "price":9.79,
+	   "discounts":50,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdb2",
+	   "category":"burgers",
+	   "name":"Spot Lola Burger",
+	   "imgUrl":"/images/products/burgers/spot-lola-burger.png",
+	   "price":5.19,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd91",
+	   "category":"pizza",
+	   "name":"Detroit Style Pizza",
+	   "imgUrl":"/images/products/pizza/detroit-style-pizza.png",
+	   "price":9.89,
+	   "discounts":50,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdb3",
+	   "category":"salads",
+	   "name":"Crudités Vegetarian Salad",
+	   "imgUrl":"/images/products/salads/crudites-vegetarian-salad.png",
+	   "price":4.29,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd88",
+	   "category":"salads",
+	   "name":"Shrimp Salad",
+	   "imgUrl":"/images/products/salads/shrimp-salad.png",
+	   "price":3.69,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd89",
+	   "category":"desserts",
+	   "name":"Chocolate Gelato Cream Desert",
+	   "imgUrl":"/images/products/desserts/chocolate-gelato-cream-desert.png",
+	   "price":3.19,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd8f",
+	   "category":"desserts",
+	   "name":"Raspberry Ice Cream Dessert",
+	   "imgUrl":"/images/products/desserts/raspberry-ice-cream-dessert.png",
+	   "price":2.99,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd9b",
+	   "category":"salads",
+	   "name":"Fatush Beans Salad",
+	   "imgUrl":"/images/products/salads/fatush-beans-salad.png",
+	   "price":3.39,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd9c",
+	   "category":"pizza",
+	   "name":"Italian Mozzarella Pizza",
+	   "imgUrl":"/images/products/pizza/italian-mozzarella-pizza.png",
+	   "price":9.29,
+	   "discounts":50,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cda0",
+	   "category":"salads",
+	   "name":"Fatush Spinach Salad",
+	   "imgUrl":"/images/products/salads/fatush-spinach-salad.png",
+	   "price":4.39,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cda9",
+	   "category":"drinks",
+	   "name":"Wine Cocktail Lemonade",
+	   "imgUrl":"/images/products/drinks/wine-cocktail-lemonade.png",
+	   "price":2.59,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdaf",
+	   "category":"pizza",
+	   "name":"Makizushi Tomato Pizza",
+	   "imgUrl":"/images/products/pizza/makizushi-tomato-pizza.png",
+	   "price":9.59,
+	   "discounts":50,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdb4",
+	   "category":"pizza",
+	   "name":"Campagnola Mozzarella Pizza",
+	   "imgUrl":"/images/products/pizza/campagnola-mozzarella-pizza.png",
+	   "price":9.89,
+	   "discounts":50,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd8d",
+	   "category":"salads",
+	   "name":"Leafy Vegetables Salad",
+	   "imgUrl":"/images/products/salads/leafy-vegetables-salad.png",
+	   "price":4.29,
+	   "discounts":10,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd98",
+	   "category":"desserts",
+	   "name":"Puffed Milk Ice Cream",
+	   "imgUrl":"/images/products/desserts/puffed-milk-ice-cream.png",
+	   "price":2.49,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cda3",
+	   "category":"salads",
+	   "name":"Crudités Salad Story",
+	   "imgUrl":"/images/products/salads/crudites-salad-story.png",
+	   "price":2.99,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cda6",
+	   "category":"burgers",
+	   "name":"Whopper Сhicken Hamburger",
+	   "imgUrl":"/images/products/burgers/whopper-chicken-hamburger.png",
+	   "price":5.19,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdaa",
+	   "category":"desserts",
+	   "name":"Milkshake Ice Cream Dessert",
+	   "imgUrl":"/images/products/desserts/milkshake-ice-cream-dessert.png",
+	   "price":2.69,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdb5",
+	   "category":"desserts",
+	   "name":"Cupcake Ice Cream Desert",
+	   "imgUrl":"/images/products/desserts/cupcake-ice-cream-desert.png",
+	   "price":2.79,
+	   "discounts":0,
+	   "popular":true
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd9d",
+	   "category":"pizza",
+	   "name":"Pepperoni Italian Pizza",
+	   "imgUrl":"/images/products/pizza/pepperoni-italian-pizza.png",
+	   "price":8.99,
+	   "discounts":50,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdab",
+	   "category":"burgers",
+	   "name":"Mission Bowling Burger",
+	   "imgUrl":"/images/products/burgers/mission-bowling-burger.png",
+	   "price":5.29,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cdac",
+	   "category":"drinks",
+	   "name":"Strawberry Juice Cocktail",
+	   "imgUrl":"/images/products/drinks/strawberry-juice-cocktail.png",
+	   "price":2.39,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cda8",
+	   "category":"drinks",
+	   "name":"Americano Cocktail Campari",
+	   "imgUrl":"/images/products/drinks/americano-cocktail-campari.png",
+	   "price":2.49,
+	   "discounts":0,
+	   "popular":false
+	},
+	{
+	   "_id":"61420cf7b14aac3eafb7cd92",
+	   "category":"desserts",
+	   "name":"Waffle Ice Cream Desert",
+	   "imgUrl":"/images/products/desserts/waffle-ice-cream-desert.png",
+	   "price":3.69,
+	   "discounts":10,
+	   "popular":false
+	}
+]

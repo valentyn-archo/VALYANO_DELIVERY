@@ -1,0 +1,50 @@
+@import "scss/mixins";
+
+.body {
+  text-align: center;
+
+  p {
+    margin-top: 25px;
+  }
+
+  img {
+    margin-top: 25px;
+    width: 150px;
+  }
+
+  svg {
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.continue {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+@include tablet {
+  .body {
+    font-size: 20px;
+
+    svg {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+@include laptop {
+  .body {
+    font-size: 22px;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .continue {
+    font-size: 22px;
+  }
+}

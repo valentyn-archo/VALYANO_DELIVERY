@@ -1,0 +1,54 @@
+@import "scss/vars";
+@import "scss/mixins";
+
+.container {
+  margin: 0 auto;
+  width: 360px;
+  padding: 12px;
+}
+
+.wrapper {
+  display: grid;
+  grid: auto 1fr / 296px;
+  gap: 20px;
+  background-color: $color-bg-beige;
+  border: 5px solid $color-line-beige;
+  min-height: calc(100vh - 24px);
+  border-radius: 30px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(175, 125, 31, 0.25);
+}
+
+@include medium-mob {
+  .container {
+    width: 552px;
+  }
+
+  .wrapper {
+    grid: 1fr / auto 313px;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+@include tablet {
+  .container {
+    width: 744px;
+  }
+
+  .wrapper {
+    grid-template-columns: auto 500px;
+    gap: 10px;
+  }
+}
+
+@include laptop {
+  .container {
+    width: 968px;
+  }
+
+  .wrapper {
+    grid-template-columns: auto 735px;
+    gap: 0;
+  }
+}

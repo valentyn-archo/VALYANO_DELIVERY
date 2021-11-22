@@ -1,0 +1,62 @@
+@import "scss/vars";
+@import "scss/mixins";
+
+.wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuBoxWrapper {
+  @include block-wrapper;
+}
+
+.menuBoxInner {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.iconBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 60px;
+  cursor: pointer;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.categoryName {
+  display: none;
+}
+
+@include medium-mob {
+  .wrapper {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0 15px;
+    gap: 15px;
+  }
+
+  .menuBoxWrapper {
+    width: 100%;
+  }
+
+  .categoryName {
+    display: block;
+    color: $color-font-menu;
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+}
+
+@include laptop {
+  .categoryName {
+    font-size: 22px;
+  }
+}

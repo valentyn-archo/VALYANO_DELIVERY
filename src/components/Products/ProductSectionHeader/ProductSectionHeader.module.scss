@@ -1,0 +1,43 @@
+@import "scss/vars";
+@import "scss/mixins";
+
+.box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.title {
+  font-size: 22px;
+  color: $color-font-main;
+}
+
+.moreButton {
+  font-size: 16px;
+  background-color: #fffcf6;
+  color: #a58022;
+  padding: 2px 7px;
+  border: 1px solid $color-line-beige;
+  border-radius: 5px;
+}
+
+.line {
+  flex: 1 0 auto;
+  margin: 0 15px;
+  height: 5px;
+  border-bottom: 1px dashed $color-line-brown;
+}
+
+@include tablet {
+  .box {
+    margin-top: 30px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .moreButton {
+    font-size: 18px;
+  }
+}
