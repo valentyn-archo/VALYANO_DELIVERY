@@ -1,0 +1,30 @@
+@import "scss/vars";
+@import "scss/mixins";
+
+.title {
+  font-size: 22px;
+  color: $color-font-main;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@include tablet {
+  .title {
+    font-size: 26px;
+  }
+
+  .productsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include laptop {
+  .productsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

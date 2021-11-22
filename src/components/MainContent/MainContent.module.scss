@@ -1,0 +1,14 @@
+@import "scss/vars";
+@import "scss/mixins";
+
+.wrapper {
+  height: 100%;
+}
+
+.inner {
+  flex: 1;
+  position: relative;
+  padding: 10px 10px 15px;
+  height: 100%;
+  @include block-wrapper;
+}

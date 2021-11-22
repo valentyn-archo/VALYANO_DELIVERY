@@ -1,0 +1,53 @@
+@import "scss/mixins";
+
+.box {
+  margin-top: 20px;
+  text-align: center;
+
+  p {
+    color: #cb1e1e;
+    font-size: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.error {
+  margin: 20px 0;
+
+  svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.continue {
+  font-size: 20px;
+}
+
+@include medium-mob {
+  .continue {
+    font-size: 22px;
+  }
+}
+
+@include tablet {
+  .box {
+    p {
+      font-size: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .error {
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.layout {
+  color: #fffcf6;
+  background-color: #ecaf7b;
+  border-radius: 5px;
+  padding: 7px 10px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #8c5120;
+  }
+}

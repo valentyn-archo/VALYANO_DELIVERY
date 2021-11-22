@@ -1,0 +1,119 @@
+@import "scss/vars";
+@import "scss/mixins";
+
+.box {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 10px 5px;
+  border-bottom: 1px dashed $color-line-brown;
+  column-gap: 12px;
+}
+
+button {
+  background-color: transparent;
+}
+
+.productImg {
+  flex: 0 0 60px;
+  text-align: center;
+
+  img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 70px;
+  column-gap: 3px;
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.productName {
+  margin-bottom: 12px;
+  max-width: 153px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.productInfo {
+  flex: 1 1 100%;
+}
+
+.productInfoRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productAmount {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  span {
+    width: 25px;
+    height: 20px;
+  }
+}
+
+.deleteBtn {
+  flex: 0 0 25px;
+  text-align: center;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@include tablet {
+  .productName {
+    font-size: 20px;
+    max-width: 250px;
+  }
+
+  .productAmount {
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .totalPrice {
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .deleteBtn {
+    flex: 0 0 50px;
+  }
+}
+
+@include laptop {
+  .productInfo {
+    display: flex;
+  }
+
+  .productInfoRow {
+    flex: 1 1 auto;
+  }
+
+  .productName {
+    flex-basis: 350px;
+    max-width: none;
+  }
+}
