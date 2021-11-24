@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import { Context } from "utils/context";
-import { ADD_TO_CART, ORDER_STATUS, UPDATE_CART } from "utils/consts";
+import { ADD_TO_CART, REMOVE_FROM_CART, ORDER_STATUS } from "utils/consts";
 import Icons from "UI/Icons";
 import CardWrapper from "UI/CardWrapper";
 
@@ -22,19 +22,16 @@ const ProductCard = ({ item }) => {
     state: { cartProductList },
     dispatch,
   } = useContext(Context);
-  const isInCart = cartProductList.length ? cartProductList.find(
+  let isInCart = cartProductList.length ? cartProductList.find(
     (cartItem) => cartItem._id === item._id
   ) : false;
   const price = item.discounts
     ? ((item.price * (100 - item.discounts)) / 100).toFixed(2)
     : item.price;
 
-  const onAddToCart = () => {
+  const onCartClick = () => {
     if (isInCart) {
-      dispatch({
-        type: UPDATE_CART,
-        payload: { _id: item._id, amount: isInCart.amount + 1 },
-      });
+      dispatch({ type: REMOVE_FROM_CART, payload: { itemID: item._id } });
     } else {
       const processedPrice = parseFloat(price);
       const newItem = { ...item, price: processedPrice, amount: 1 };
@@ -61,7 +58,7 @@ const ProductCard = ({ item }) => {
             <div className={classes.oldPriceText}>{item.price}</div>
           </div>
         )}
-        <div className={classes.cartIcon} onClick={onAddToCart}>
+        <div className={classes.cartIcon} onClick={onCartClick}>
           {isInCart && (
             <div className={classes.checkIcon}>
               <Icons icon={"check"} />
