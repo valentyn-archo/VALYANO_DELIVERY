@@ -19,9 +19,9 @@ const CartPage = () => {
     loading,
   } = useContext(Context);
 
-  const totalPrice = cartProductList
+  const totalPrice = cartProductList.length ? cartProductList
     .reduce((sum, item) => sum + item.price * item.amount, 0)
-    .toFixed(2);
+    .toFixed(2) : 0;
 
   const onHandlerCheckout = () =>
     fetching(POST_DATA, LINK_NEW_ORDER, { cartProductList, totalPrice });

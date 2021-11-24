@@ -21,8 +21,9 @@ export default function reducer(state, action) {
       return { ...state, orderStatus };
     }
     case ADD_TO_CART: {
+      const currentProcuctList = state.cartProductList.length ? state.cartProductList : [];
       const cartProductList = [
-        ...state.cartProductList,
+        ...currentProcuctList,
         action.payload.product,
       ];
 

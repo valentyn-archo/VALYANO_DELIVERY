@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import { Context } from "utils/context";
-import { ADD_TO_CART, CDN_URL, ORDER_STATUS, UPDATE_CART } from "utils/consts";
+import { ADD_TO_CART, ORDER_STATUS, UPDATE_CART } from "utils/consts";
 import Icons from "UI/Icons";
 import CardWrapper from "UI/CardWrapper";
 
@@ -22,9 +22,9 @@ const ProductCard = ({ item }) => {
     state: { cartProductList },
     dispatch,
   } = useContext(Context);
-  const isInCart = cartProductList.find(
+  const isInCart = cartProductList.length ? cartProductList.find(
     (cartItem) => cartItem._id === item._id
-  );
+  ) : false;
   const price = item.discounts
     ? ((item.price * (100 - item.discounts)) / 100).toFixed(2)
     : item.price;
@@ -36,7 +36,8 @@ const ProductCard = ({ item }) => {
         payload: { _id: item._id, amount: isInCart.amount + 1 },
       });
     } else {
-      const newItem = { ...item, price, amount: 1 };
+      const processedPrice = parseFloat(price);
+      const newItem = { ...item, price: processedPrice, amount: 1 };
 
       dispatch({ type: ADD_TO_CART, payload: { product: newItem } });
     }
@@ -47,7 +48,7 @@ const ProductCard = ({ item }) => {
   return (
     <CardWrapper>
       <div className={classes.productImg}>
-        <img src={CDN_URL + item.imgUrl} alt={item.name} />
+        <img src={item.imgUrl} alt={item.name} />
       </div>
       <h3 className={classes.title}>{item.name}</h3>
       <div className={classes.priceBlock}>

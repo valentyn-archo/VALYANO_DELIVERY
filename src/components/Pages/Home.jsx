@@ -3,7 +3,6 @@ import React, { useContext, useEffect } from "react";
 import { Context } from "utils/context";
 import {
   GET_DATA,
-  LINK_ALL_PRODUCTS,
   LINK_DISCOUNTS,
   LINK_POPULAR,
 } from "utils/consts";
@@ -32,7 +31,7 @@ const Home = () => {
 
   useEffect(
     () => {
-      fetching(GET_DATA, LINK_ALL_PRODUCTS);
+      fetching(GET_DATA);
 
       setTitle("Home");
     },

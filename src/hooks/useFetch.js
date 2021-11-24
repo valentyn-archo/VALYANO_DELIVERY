@@ -13,18 +13,18 @@ export default function useFetch(dispatch) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  const fetching = async (type, url, data) => {
+  const fetching = async (type, argument, data) => {
     try {
       setLoading(true);
 
       if (type === GET_DATA) {
-        const products = await getData();
+        const products = await getData(argument);
 
         dispatch({ type: SET_DATA, payload: { products } });
       }
 
       if (type === POST_DATA) {
-        const response = await postData(url, data);
+        const response = await postData(data);
 
         if (response.status === 200) {
           dispatch({ type: ORDER_STATUS, payload: { orderStatus: true } });

@@ -18,6 +18,7 @@ module.exports = gql`
         price: Float!
         discounts: Int!
         popular: Boolean!
+        amount: Int!
     }
     input OrderInput {
         orderList: [ProductInput]!

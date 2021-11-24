@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import { Context } from "utils/context";
-import { CDN_URL, REMOVE_FROM_CART, UPDATE_CART } from "utils/consts";
+import {REMOVE_FROM_CART, UPDATE_CART } from "utils/consts";
 
 import Icons from "UI/Icons";
 
@@ -34,7 +34,7 @@ const ProductInCart = ({ item }) => {
   return (
     <div className={classes.box}>
       <div className={classes.productImg}>
-        <img src={CDN_URL + item.imgUrl} alt={item.name} />
+        <img src={item.imgUrl} alt={item.name} />
       </div>
       <div className={classes.productInfo}>
         <p className={classes.productName}>{item.name}</p>
