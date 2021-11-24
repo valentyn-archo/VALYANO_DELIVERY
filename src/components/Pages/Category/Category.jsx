@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import { Context } from "utils/context";
-import { GET_DATA, LINK_CATEGORY, LINK_FILTER } from "utils/consts";
+import { GET_DATA } from "utils/consts";
 import setTitle from "utils/setTitle";
 import ProductCard from "components/Products/ProductCard";
 import CardSkeleton from "UI/CardSkeleton";
@@ -19,15 +19,10 @@ const Category = () => {
 
   useEffect(
     () => {
-      let queryUrl = LINK_CATEGORY;
-
-      if (["discounts", "popular"].includes(page)) {
-        queryUrl = LINK_FILTER;
-      }
-
       setTitle(page);
 
-      fetching(GET_DATA, queryUrl + page);
+      //* page param values: pizza, salads, burgers, drinks, desserts, discounts, popular
+      fetching(GET_DATA, page);
     },
     // eslint-disable-next-line
     [page]
