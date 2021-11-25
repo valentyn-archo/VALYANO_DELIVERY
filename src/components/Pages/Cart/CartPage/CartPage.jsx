@@ -1,4 +1,5 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { Modal } from 'react-responsive-modal';
 
 import { Context } from "utils/context";
 import { LINK_NEW_ORDER, POST_DATA } from "utils/consts";
@@ -12,6 +13,8 @@ import Loader from "components/Loader";
 
 import classes from "./CartPage.module.scss";
 
+import 'react-responsive-modal/styles.css';
+
 const CartPage = () => {
   const {
     fetching,
@@ -19,10 +22,13 @@ const CartPage = () => {
     loading,
   } = useContext(Context);
 
+  const [openModal, setOpenModal] = useState(false);
+
   const totalPrice = cartProductList.length ? cartProductList
     .reduce((sum, item) => sum + item.price * item.amount, 0)
     .toFixed(2) : 0;
 
+  // eslint-disable-next-line no-unused-vars
   const onHandlerCheckout = () =>
     fetching(POST_DATA, LINK_NEW_ORDER, { cartProductList, totalPrice });
 
@@ -35,6 +41,17 @@ const CartPage = () => {
         <Loader />
       ) : cartProductList.length ? (
         <div className={classes.cartItems}>
+          <Modal 
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+            center
+            classNames={{
+              overlay: classes.customOverlay,
+              modal: classes.customModal,
+            }}
+          >
+            Here you need to provide any information...
+          </Modal>
           {cartProductList.map((productItem) => {
             return <ProductInCart key={productItem._id} item={productItem} />;
           })}
@@ -43,7 +60,7 @@ const CartPage = () => {
             <Icons icon={"price"} />
             <p>{totalPrice}</p>
           </div>
-          <div className={classes.checkout} onClick={onHandlerCheckout}>
+          <div className={classes.checkout} onClick={() => setOpenModal(true)} /*onClick={onHandlerCheckout} */>
             <Button>Checkout</Button>
           </div>
         </div>

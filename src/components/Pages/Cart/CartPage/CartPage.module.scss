@@ -42,6 +42,15 @@
   text-align: center;
 }
 
+.customOverlay {
+  background: rgba(182, 182, 182, 0.7);
+}
+
+.customModal {
+  height: 90%;
+  width: 90%;
+}
+
 @include medium-mob {
   .content {
     padding: 0 5px;
@@ -49,6 +58,13 @@
 
   .checkout {
     font-size: 22px;
+  }
+
+  .customModal {
+    background: #f2f2f2;
+    width: 500px;
+    height: 750px;
+    width: 100%;
   }
 }
 
@@ -65,5 +81,10 @@
     .text {
       font-size: 22px;
     }
+  }
+
+  .customModal {
+    height: 95%;
+    width: 95%;
   }
 }
