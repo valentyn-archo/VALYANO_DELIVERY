@@ -42,6 +42,78 @@
   text-align: center;
 }
 
+.customOverlay {
+  background: rgba(182, 182, 182, 0.7);
+}
+
+.title {
+  font-size: 24px;
+  color: #8c5120;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.submitButton {
+  color: #fffcf6;
+  background-color: #ecaf7b;
+  border-radius: 5px;
+  padding: 7px 10px;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #8c5120;
+}
+
+.phoneInput {
+  margin-top: 8px;
+  padding: 12px 20px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.textInput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 4px;
+}
+
+label {
+  margin-top: 8px;
+  display: inline-block;
+  font-size: 18px;
+  color: #8c5120;
+}
+
+.textInput:focus {
+  border: 2px solid #444444;
+}
+
+.textAreaInput {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.textAreaInput:focus {
+  border: 2px solid #444444;
+}
+
 @include medium-mob {
   .content {
     padding: 0 5px;
@@ -49,6 +121,11 @@
 
   .checkout {
     font-size: 22px;
+  }
+
+  .customModal {
+    background: #f2f2f2;
+    width: 500px;
   }
 }
 

@@ -59,6 +59,7 @@ module.exports = {
                 _id: new ObjectId().toString(),
                 date: new Date().toString(),
                 orderList: args.orderInput.orderList,
+                contactInformation: args.orderInput.contactInformation,
                 totalPrice: args.orderInput.totalPrice
             };
 
