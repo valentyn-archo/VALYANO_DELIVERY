@@ -66,8 +66,12 @@ const CartPage = () => {
               modal: classes.customModal,
             }}
           >
-            Here you need to provide any information...
+            <h3 className={classes.title}>Checkout Form</h3>
             <form onSubmit={handleSubmit(onSubmit)}>
+              <label for="name">Name 👤</label>
+              <input className={classes.textInput} id="name" {...register('name', { required: true })} />
+              {errors.name && <p style={{"color": "red", "right": 0}}>Please enter name. It's required.</p>}
+              <label for="phone">Phone Number 📱</label>
               <PhoneInputWithCountry
                 international
                 countryCallingCodeEditable={false}
@@ -76,16 +80,17 @@ const CartPage = () => {
                 onChange={setValue}
                 className={classes.phoneInput}
                 control={control}
+                id="phone"
                 name="phone"
                 rules = {{ required: true, validate: isPossiblePhoneNumber }}
               />
-              {errors.phoneInput && <p style={{"color": "red"}}>Please enter correct phone number.</p>}
-              <input className={classes.textInput} {...register('name', { required: true })} />
-              {errors.name && <p style={{"color": "red"}}>Please enter name. It's required.</p>}
-              <input className={classes.textInput} {...register('address', { required: true })} />
+              {errors.phone && <p style={{"color": "red"}}>Please enter correct phone number.</p>}
+              <label for="address">Address 🏡</label>
+              <input className={classes.textInput} id="address" {...register('address', { required: true })} />
               {errors.address && <p style={{"color": "red"}}>Please enter address for delivery.</p>}
-              <textarea className={classes.textAreaInput} placeholder="Additional information..." {...register('comment')} />
-              <input type="submit" />
+              <label for="comment">Comment 📝</label>
+              <textarea className={classes.textAreaInput} id="comment" placeholder="Additional information..." {...register('comment')} />
+              <input className={classes.submitButton} type="submit" />
             </form>
           </Modal>
           {cartProductList.map((productItem) => {
