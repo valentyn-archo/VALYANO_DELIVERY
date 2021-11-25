@@ -46,9 +46,28 @@
   background: rgba(182, 182, 182, 0.7);
 }
 
-.customModal {
-  height: 90%;
-  width: 90%;
+// .customModal {
+//   height: 90%;
+//   width: 90%;
+// }
+
+.phoneInput {
+  margin-top: 20px;
+  padding: 12px 20px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 4px;
+}
+
+.textInput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 4px;
 }
 
 @include medium-mob {
@@ -63,8 +82,6 @@
   .customModal {
     background: #f2f2f2;
     width: 500px;
-    height: 750px;
-    width: 100%;
   }
 }
 
@@ -83,8 +100,8 @@
     }
   }
 
-  .customModal {
-    height: 95%;
-    width: 95%;
-  }
+  // .customModal {
+  //   height: 95%;
+  //   width: 95%;
+  // }
 }
