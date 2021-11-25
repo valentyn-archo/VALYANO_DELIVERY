@@ -46,15 +46,9 @@
   background: rgba(182, 182, 182, 0.7);
 }
 
-// .customModal {
-//   height: 90%;
-//   width: 90%;
-// }
-
 .phoneInput {
   margin-top: 20px;
   padding: 12px 20px;
-  margin-top: 18px;
   margin-bottom: 8px;
   box-sizing: border-box;
   border: 2px solid grey;
@@ -68,6 +62,25 @@
   box-sizing: border-box;
   border: 2px solid grey;
   border-radius: 4px;
+}
+
+.textInput:focus {
+  border: 2px solid #444444;
+}
+
+.textAreaInput {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.textAreaInput:focus {
+  border: 2px solid #444444;
 }
 
 @include medium-mob {
@@ -99,9 +112,4 @@
       font-size: 22px;
     }
   }
-
-  // .customModal {
-  //   height: 95%;
-  //   width: 95%;
-  // }
 }

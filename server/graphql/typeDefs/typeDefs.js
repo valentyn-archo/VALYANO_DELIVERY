@@ -10,6 +10,12 @@ module.exports = gql`
         discounts: Int!
         popular: Boolean!
     }
+    type ContactInformation {
+        name: String!
+        phone: String!
+        address: String!
+        comment: String
+    }
     input ProductInput {
         _id: String!
         category: String!
@@ -20,14 +26,22 @@ module.exports = gql`
         popular: Boolean!
         amount: Int!
     }
+    input ContactInformationInput {
+        name: String!
+        phone: String!
+        address: String!
+        comment: String
+    }
     input OrderInput {
         orderList: [ProductInput]!
+        contactInformation: ContactInformationInput!
         totalPrice: Float!
     }
     type Order {
         _id: String!
         date: String!
         orderList: [Product]!
+        contactInformation: ContactInformation!
         totalPrice: Float!
     }
     type Query {

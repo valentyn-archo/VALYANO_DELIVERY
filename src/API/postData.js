@@ -23,7 +23,8 @@ export default async function postData(data) {
     variables: {
       orderInput: {
         orderList: data.cartProductList,
-        totalPrice: parseFloat(data.totalPrice)
+        totalPrice: parseFloat(data.totalPrice),
+        contactInformation: data.contactInformation
       }
     }
   }

@@ -40,13 +40,12 @@ const CartPage = () => {
     .reduce((sum, item) => sum + item.price * item.amount, 0)
     .toFixed(2) : 0;
 
-  const onHandlerCheckout = () =>
-    fetching(POST_DATA, LINK_NEW_ORDER, { cartProductList, totalPrice });
+  const onHandlerCheckout = (contactInformation) =>
+    fetching(POST_DATA, LINK_NEW_ORDER, { cartProductList, totalPrice, contactInformation });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = (contactInformation) => {
     setOpenModal(false);
-    onHandlerCheckout();
+    onHandlerCheckout(contactInformation);
   }
 
   useEffect(() => setTitle("Cart"), []);
@@ -77,7 +76,7 @@ const CartPage = () => {
                 onChange={setValue}
                 className={classes.phoneInput}
                 control={control}
-                name="phoneInput"
+                name="phone"
                 rules = {{ required: true, validate: isPossiblePhoneNumber }}
               />
               {errors.phoneInput && <p style={{"color": "red"}}>Please enter correct phone number.</p>}
@@ -85,6 +84,7 @@ const CartPage = () => {
               {errors.name && <p style={{"color": "red"}}>Please enter name. It's required.</p>}
               <input className={classes.textInput} {...register('address', { required: true })} />
               {errors.address && <p style={{"color": "red"}}>Please enter address for delivery.</p>}
+              <textarea className={classes.textAreaInput} placeholder="Additional information..." {...register('comment')} />
               <input type="submit" />
             </form>
           </Modal>
